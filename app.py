@@ -4,7 +4,7 @@ from openai import OpenAI
 st.title("ChatGPT-like clone clone")
 
 # Set OpenAI API key from Streamlit secrets
-client = OpenAI(api_key='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'])
+client = OpenAI(api_key='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')
 
 # Set a default model
 if "openai_model" not in st.session_state:
