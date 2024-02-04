@@ -1,9 +1,10 @@
 import streamlit as st
 from openai import OpenAI
+import config
 
 st.title("旅游咨询机器人")
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key=config.OPENAI_API_KEY)
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
