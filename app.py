@@ -1,7 +1,5 @@
 import openai
 import streamlit as st
-import config
-
 st.title("趣味旅行")
 
 client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
